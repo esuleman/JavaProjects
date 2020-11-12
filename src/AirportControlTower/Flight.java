@@ -1,3 +1,5 @@
+package AirportControlTower;
+
 public class Flight {
     String flightnum;
     String flightcode;
@@ -10,7 +12,7 @@ public class Flight {
     private String actual_arrival;
     private String flightduration;
 
-    public Flight(String flightnum, String flightcode, Aircraft airplane,  Airport origin, Airport destination, String departure, String arrival) {
+    public Flight(String flightnum, String flightcode, Aircraft airplane, Airport origin, Airport destination, String departure, String arrival) {
         this.flightnum = flightnum;
         this.flightcode = flightcode;
         this.airplane = airplane;
@@ -114,12 +116,12 @@ public class Flight {
 
     @Override
     public String toString() {
-        return "Flight: " + flightnum + flightcode +
+        return "AirportControlTower.Flight: " + flightnum + flightcode +
                 "\nDeparting To: " + destination.getName() + " in " + destination.getLocation() +
                 "\nArrival At: " + arrival +
                 "\nDeparting From: " + origin.getName() + " in " + origin.getLocation() +
                 "\nDeparting At: " + departure +
-                "\nEstimated Flight Duration: " + flightduration +
+                "\nEstimated AirportControlTower.Flight Duration: " + flightduration +
                 "\nWeather In " + destination.getName() + " Is Currently " + destination.getWeather();
     }
 }

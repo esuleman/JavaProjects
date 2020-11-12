@@ -1,3 +1,5 @@
+package AirportControlTower;
+
 public class Gate {
     private String name;
     private String airline;

@@ -1,3 +1,5 @@
+package AirportControlTower;
+
 public class Airport {
     private String name;
     private String location;
